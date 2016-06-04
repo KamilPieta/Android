@@ -31,8 +31,9 @@
         android:layout_margin="@dimen/fab_margin"
         android:onClick="addOrEditTaskClick"
         app:backgroundTint="@color/colorPrimary"
-       android:src="@drawable/ic_add_white_48dp"
-        />
+       android:src="@drawable/ic_add_white_48dp"  />
+       <!-- app:layout_behavior="com.valdio.valdioveliu.floatingactionbuttonproject.Scrolling_Floating_Action_Button.FAB_Float_on_Scroll"-->
+
 
     <android.support.design.widget.FloatingActionButton
         android:id="@+id/fab1"
@@ -42,7 +43,7 @@
         android:layout_gravity="bottom|end"
         android:layout_marginRight="@dimen/fab_margin"
         app:elevation="6dp"
-        app:backgroundTint="@color/colorAccent"
+        app:backgroundTint="@color/colorRed"
         android:src="@drawable/ic_delete_forever_white_48dp"
         />
 

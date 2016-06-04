@@ -6,16 +6,34 @@
     android:layout_height="match_parent"
     android:weightSum="1">
 
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Title"
+        android:id="@+id/textView"
+        android:layout_weight="0.05"
+        android:gravity="center"
+       />
+
     <android.widget.EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/title"
         android:layout_gravity="center_horizontal"
-        android:text="Title"
+        android:hint="Enter your Title here"
         android:textSize="30dp"
         android:textStyle="bold"
         android:textAlignment="center"
         android:layout_weight="0.17" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Description"
+        android:id="@+id/textView2"
+        android:gravity="center" />
 
     <android.widget.EditText
         android:layout_width="match_parent"
@@ -23,27 +41,43 @@
         android:inputType="textMultiLine"
         android:ems="10"
         android:id="@+id/description"
-        android:layout_gravity="center_horizontal"
-        android:layout_weight="0.73"
-        android:text="description"
+        android:layout_weight="0.62"
+        android:hint="Enter your description"
         android:textAlignment="center" />
 
-    <android.widget.EditText
+    <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:inputType="date"
-        android:ems="10"
-        android:id="@+id/date"
-        android:layout_gravity="center_horizontal"
-        android:text="date"
-        android:textAlignment="center" />
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Date"
+        android:id="@+id/textView3"
+        android:layout_weight="0.05"
+        android:gravity="center" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/datePicker"
+        android:layout_weight="0.05"
+        android:hint="click and choose the date"
+        android:gravity="center"
+        android:focusable="false"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Icon URL"
+        android:id="@+id/textView4"
+        android:layout_weight="0.05"
+        android:gravity="center" />
 
     <android.widget.EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/url"
         android:layout_gravity="center_horizontal"
-        android:text="url_to_icon"
+        android:hint="Enter url to your avatar"
         android:textAlignment="center" />
 
     <android.support.design.widget.FloatingActionButton
@@ -55,5 +89,7 @@
         android:onClick="comfirmed"
         app:backgroundTint="@color/colorPrimary"
         android:src="@drawable/ic_done_white_48dp" />
+
+
 
 </LinearLayout>

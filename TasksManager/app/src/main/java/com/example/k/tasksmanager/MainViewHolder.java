@@ -14,7 +14,7 @@ import org.w3c.dom.Text;
 /**
  * Created by k on 25.05.2016.
  */
-public class TaskViewHolder extends RecyclerView.ViewHolder{
+public class MainViewHolder extends RecyclerView.ViewHolder{
 
     CardView taskList;
     TextView task_title;
@@ -23,7 +23,7 @@ public class TaskViewHolder extends RecyclerView.ViewHolder{
     RelativeLayout task_layout;
 
 
-    public TaskViewHolder(View itemView) {
+    public MainViewHolder(View itemView) {
         super(itemView);
         taskList=(CardView)itemView.findViewById(R.id.taskList);
         task_title=(TextView)itemView.findViewById(R.id.task_title);

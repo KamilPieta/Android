@@ -24,6 +24,7 @@ dependencies {
     compile 'com.android.support:design:23.2.0'
     compile 'com.android.support:cardview-v7:23.2.0'
     compile 'com.android.support:recyclerview-v7:23.2.0'
+    compile 'com.mcxiaoke.volley:library:1.0.19'
     compile project(':picasso-2.5.2')
     compile project(':universal-image-loader-1.9.5')
 }
